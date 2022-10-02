@@ -7,71 +7,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 </head>
 
 <body>
-    <div class="header">
-        <a href="#"><img src="images/logo.png" id="mainLogo" width="" height=""></a>
+    <div class="header mx-auto">
+        <div class="navBar screen80">
+            <a href="#"><img src="images/logo.png" id="mainLogo" width="" height=""></a>
 
-        <ul>
-            <li><a href="#">Info</a></li>
-            <li><a href="#">Forums</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
-
-    <div class="hero">
-        <div class="hItem">
-            <div class="heroText">
-                <h1>Coolest breakbeat page ever!</h1>
-                <p>Breakbeat is a techno subgenre, this is the best page you will ever find about breakbeat! Feel free
-                    to join the forums.</p>
-                <button class="button heroButton">Sign up</button>
-            </div>
-        </div>
-        <div class="hItem">
-            <div class="hItem heroImg">
-                <img src="images/dobberman.jpg" alt="Dobberman">
-            </div>
+            <ul class="links">
+                <li><a href="#">Work</a></li>
+                <li><a href="#quoteSection">About</a></li>
+                <li><a href="#contactSection">Contact</a></li>
+            </ul>
         </div>
     </div>
 
-    <div class="info">
-        <h1>Type of Breakz.</h1>
-        <div class="infoBoxes">
-            <div class="infoBox">
-                <img src="images/dobberman.jpg" alt="Dobberman">
-                <p>d1</p>
-            </div>
-            <div class="infoBox">
-                <img src="images/dobberman.jpg" alt="Dobberman">
-                <p>d1</p>
-            </div>
-            <div class="infoBox">
-                <img src="images/dobberman.jpg" alt="Dobberman">
-                <p>d1</p>
-            </div>
-            <div class="infoBox">
-                <img src="images/dobberman.jpg" alt="Dobberman">
-                <p>d1</p>
+    <div class="main-wrapper">
+        <div class="hero center-flex">
+            <div class="heroBox">
+                <div class="hItem">
+                    <div class="heroText screen50">
+                        <h1>Coolest breakbeat page ever!</h1>
+                        <p>Breakbeat is a techno subgenre, this is the best page you will ever find about breakbeat!
+                            Feel
+                            free
+                            to join the forums.</p>
+                        <button class="button heroButton">Sign up</button>
+                    </div>
+                </div>
+                <div class="hItem">
+                    <div class="hItem heroImg">
+                        <img src="images/dobberman.jpg" alt="Dobberman">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="info">
+            <h1>Type of Breakz.</h1>
+            <div class="infoBoxes mx-auto screen60">
+                <div class="infoBox">
+                    <img src="images/koma.jpg" alt="Dobberman">
+                    <p>Shutterspeed</p>
+                </div>
+                <div class="infoBox">
+                    <img src="images/dobberman.jpg" alt="Dobberman">
+                    <p>d1</p>
+                </div>
+                <div class="infoBox">
+                    <img src="images/dobberman.jpg" alt="Dobberman">
+                    <p>d1</p>
+                </div>
+                <div class="infoBox">
+                    <img src="images/dobberman.jpg" alt="Dobberman">
+                    <p>d1</p>
+                </div>
+                <div class="infoBox">
+                    <img src="images/dobberman.jpg" alt="Dobberman">
+                    <p>d1</p>
+                </div>
+            </div>
+        </div>
+        <div class="app">
+            <div id="quoteSection" class="quote center-flex">
+                <div class="quoteText">
+                    <p>
+                        Now, we do not pretend to have achieved perfection, but we do have a system, and it works.
+                        Your choice is simple: Join us and live in peace, or pursue your present course and face
+                        obliteration.
+                    </p>
+                </div>
+                <div class="quoteAuthor">
+                    <h4>
+                        -Klaatu, humanoid alien
+                    </h4>
+                </div>
+            </div>
+        </div>
 
-    <div class="quote">
-        <div class="quoteText">
-            <p>
-                Now, we do not pretend to have achieved perfection, but we do have a system, and it works.
-                Your choice is simple: Join us and live in peace, or pursue your present course and face obliteration.
-            </p>
+        <div id="contactSection" class="contact center-flex">
+            <div class="contactContainer center-flex">
+                <div class="contactItem">
+                    <a href="https://github.com/arvidjj" target="_blank">
+                        <img src="images/github.png" alt="Github">
+                        <h2>Github: arvidjj</h2>
+                    </a>
+                </div>
+                <div class="contactItem">
+                    <a href="mailto:arvidjjx@gmail.com">
+                        <img src="images/gmail.png" alt="Gmail">
+                        <h2>Gmail: arvidjjx@gmail.com</h2>
+                    </a>
+                </div>
+                <div class="contactItem">
+                    <a href="https://twitter.com/Triarii17">
+                        <img src="images/twitter.png" alt="Twitter">
+                        <h2>Twitter: Triarii17</h2>
+                    </a>
+                </div>
+                <div class="contactItem">
+                    <a href="https://www.instagram.com/arviddj/">
+                        <img src="images/instagram.png" alt="Instagram">
+                        <h2>Instagram: arvidjj</h2>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="quoteAuthor">
-            <h4>
-                Klaatu, humanoid alien
-            </h4>
-        </div>
-    </div>
 
+        <div class="signUp center-flex">
+            <div class="signUpBox screen60">
+                <div class="signUpText">
+                    <h2>Sign up to keep updated!</h2>
+                    <p>Sign up now for our product and receive information and updates about our news.</p>
+                </div>
+                <button class="button buttonSignUp">Sign up</button>
+            </div>
+        </div>
+
+        <div class="footer center-flex">
+            <p>Copyright &copy; Breakz Project 2022<br>The Odin Project</p>
+        </div>
+
+    </div>
 </body>
 
 </html>

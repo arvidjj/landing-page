@@ -1,75 +1,127 @@
-body{
-    font-family: 'Roboto';
-    margin:0;
-    padding:0;
-    display:flex;
+body {
+    font-family: 'Roboto', arial;
+    margin: 0; padding: 0;
+    display: flex;
     flex-direction: column;
-    background-color: rgb(24,25,36);
-    color:white;
+    /*background-color: rgb(24, 25, 36);*/
+    color: white;
+
+    background-image:url(images/mainBackground.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 ul {
-    display:flex;
+    display: flex;
     list-style: none;
-    font-size:18px;
+    font-size: 18px;
+    margin:5px;
 }
 
-ul li{
-    padding:12px;
+ul a {
+    padding: 20px;
+}
+
+ul a:hover {
+    border: 1px solid white;
 }
 
 a {
-    color:white;
+    color: white;
     text-decoration: none;
 }
 
-.header {
+.screen80 {
+    max-width: 80rem;
+}
+
+.screen60 {
+    max-width: 60rem;
+}
+
+.screen50 {
+    max-width: 50rem;
+}
+
+.center-flex {
+    align-items: center;
+    justify-content: center;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {   
+    display:flex;
+    justify-content: center;
+    position:fixed;
+    background-color: rgb(24, 25, 36);
+    border-bottom: 1px solid white; 
+    width: 100%;
+}
+
+.navBar {
     display:flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 16px;
-    margin-bottom:30px;
+    width: 100%;
+}
+
+.links {
+    margin-left:auto;
+    margin-right: 16px;
 }
 
 #mainLogo {
     width: auto;
-    height: 80px;
+    height: 40px;
+    padding: 10px;
 }
 
-.hero { 
-    display:flex;
+.hero {
+    display: flex;
+    margin-top: 150px;   
+    margin-bottom: 100px;      
+}
+
+.heroBox {
+    display: flex;
     align-items: stretch;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    background-color: #24252f;
 }
 
-.hItem{
-    display: flex; 
+.hItem {
+    display: flex;
 }
 
 .heroText {
     flex-shrink: 1;
-    font-size:18px;
-    background-color: #24252f;
+    font-size: 18px;  
     padding: 50px;
+    width: 100%;
 }
 
 .heroText h1 {
     font-size: 48px;
-    font-weight:bolder;
+    font-weight: bolder;
 }
 
 .heroImg img {
-    width:auto;
-    height:350px;
-} 
+    width: auto;
+    height: 350px;
+}
 
 button {
-    padding: 8px 16px;
-    cursor:pointer;
+    padding: 8px 32px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
     border: 1px solid transparent;
-    border-radius:4px;
+    border-radius: 4px;
 }
 
 .heroButton {
@@ -78,57 +130,120 @@ button {
     transition-duration: 0.5s;
 }
 
-.heroButton:hover{
+.heroButton:hover {
     background-color: whitesmoke;
 }
 
 .info {
-    padding:30px;
+    padding: 30px;
     text-align: center;
     background-color: rgb(133, 125, 204);
+    padding-bottom: 100px;
 }
 
-.info h1{
+.info h1 {
     font-size: 36px;
     font-weight: bolder;
 }
 
 .infoBoxes {
-    display:flex;
-    align-items: stretch;
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap:32px;
+    font-size: 20px;
+    gap: 36px;
+    width: 100%;
 }
 
 .infoBox img {
-    width:auto;
-    height:150px;
-    border: 5px solid rgb(24,25,36);
+    width: auto;
+    height: 200px;
+    margin: 5px;
+    border: 5px solid rgb(24, 25, 36);
     border-radius: 12px;
     box-shadow: 0 3px 5px rgba(0, 0, 0, .125);
-    transition: transform .5s; 
+    transition: transform .5s;
 }
 
 .infoBox img:hover {
-    transform: scale(1.2); 
-  }
+    transform: scale(1.2);
+}
 
-  .quote {
+.quote {
+    display: flex;
+    flex-direction: column;
+    background-color: #24252f;
+    padding: 80px;
+}
+
+.quoteText, .quoteAuthor {
+    font-size: 36px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.quoteText p {
+    font-style:italic;
+}
+
+.quoteAuthor {
+    text-align: end;
+}
+
+.quoteAuthor h4 {
+    margin-top:0;
+}
+
+.signUp {
+    display:flex;
+    margin: 150px;
+    min-width: 0;
+}
+
+.signUpBox {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(133, 125, 204);
+    padding: 36px 100px;
+    width: 100%;
+}
+
+.signUpText h2 {
+    margin-bottom:0;
+}
+
+.buttonSignUp {
+    color: white;
+    background-color: rgb(133, 125, 204);
+    border: 3px solid white;
+    border-radius: 12px;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    transition-duration: 0.5s;
+}
+
+.buttonSignUp:hover {
+    background-color: whitesmoke;
+    color:black;
+}
+
+.footer {
+    border-top: 1px solid white; 
+    background-color: #24252f;
     display:flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #24252f;
-  }
+    text-align: center;
+}
 
-  .quoteText{
-    width:50%;
-  }
-  .quoteText p {
-    font-size: 36px;
-  }
-  
-  .quoteAuthor {
-    align-self: flex-end;
-  }
+.contactItem {
+    display:flex;
+}
+
+.contactItem a img {
+    width:auto;
+    height:25px;
+}
+
+.contactContainer {
+    display:flex;
+}
