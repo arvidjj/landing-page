@@ -36,15 +36,23 @@ a {
     height: 80px;
 }
 
-.hero {
-    background-color: #24252f;
+.hero { 
     display:flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.hItem{
+    display: flex; 
 }
 
 .heroText {
+    flex-shrink: 1;
     font-size:18px;
+    background-color: #24252f;
+    padding: 50px;
 }
 
 .heroText h1 {
@@ -59,8 +67,68 @@ a {
 
 button {
     padding: 8px 16px;
+    cursor:pointer;
+    border: 1px solid transparent;
+    border-radius:4px;
 }
 
 .heroButton {
     background-color: #857dcc;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    transition-duration: 0.5s;
 }
+
+.heroButton:hover{
+    background-color: whitesmoke;
+}
+
+.info {
+    padding:30px;
+    text-align: center;
+    background-color: rgb(133, 125, 204);
+}
+
+.info h1{
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.infoBoxes {
+    display:flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:32px;
+}
+
+.infoBox img {
+    width:auto;
+    height:150px;
+    border: 5px solid rgb(24,25,36);
+    border-radius: 12px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .125);
+    transition: transform .5s; 
+}
+
+.infoBox img:hover {
+    transform: scale(1.2); 
+  }
+
+  .quote {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #24252f;
+  }
+
+  .quoteText{
+    width:50%;
+  }
+  .quoteText p {
+    font-size: 36px;
+  }
+  
+  .quoteAuthor {
+    align-self: flex-end;
+  }
