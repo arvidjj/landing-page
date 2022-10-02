@@ -8,6 +8,8 @@
     <title>Main Page</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
@@ -16,7 +18,7 @@
             <a href="#"><img src="images/logo.png" id="mainLogo" width="" height=""></a>
 
             <ul class="links">
-                <li><a href="#">Work</a></li>
+                <li><a href="#workSection">Work</a></li>
                 <li><a href="#quoteSection">About</a></li>
                 <li><a href="#contactSection">Contact</a></li>
             </ul>
@@ -25,7 +27,7 @@
 
     <div class="main-wrapper">
         <div class="hero center-flex">
-            <div class="heroBox">
+            <div class="heroBox smallShadow">
                 <div class="hItem">
                     <div class="heroText screen50">
                         <h1>Coolest breakbeat page ever!</h1>
@@ -33,7 +35,7 @@
                             Feel
                             free
                             to join the forums.</p>
-                        <button class="button heroButton">Sign up</button>
+                        <button class="button heroButton smallShadow">Sign up</button>
                     </div>
                 </div>
                 <div class="hItem">
@@ -43,7 +45,7 @@
                 </div>
             </div>
         </div>
-        <div class="info">
+        <div id="workSection" class="info smallShadow">
             <h1>Type of Breakz.</h1>
             <div class="infoBoxes mx-auto screen60">
                 <div class="infoBox">
@@ -52,7 +54,7 @@
                 </div>
                 <div class="infoBox">
                     <img src="images/dobberman.jpg" alt="Dobberman">
-                    <p>d1</p>
+                    <p>Nu Skool</p>
                 </div>
                 <div class="infoBox">
                     <img src="images/dobberman.jpg" alt="Dobberman">
@@ -69,7 +71,7 @@
             </div>
         </div>
         <div class="app">
-            <div id="quoteSection" class="quote center-flex">
+            <div id="quoteSection" class="quote center-flex smallShadow">
                 <div class="quoteText">
                     <p>
                         Now, we do not pretend to have achieved perfection, but we do have a system, and it works.
@@ -85,46 +87,51 @@
             </div>
         </div>
 
-        <div id="contactSection" class="contact center-flex">
-            <div class="contactContainer center-flex">
-                <div class="contactItem">
-                    <a href="https://github.com/arvidjj" target="_blank">
-                        <img src="images/github.png" alt="Github">
-                        <h2>Github: arvidjj</h2>
-                    </a>
-                </div>
-                <div class="contactItem">
-                    <a href="mailto:arvidjjx@gmail.com">
-                        <img src="images/gmail.png" alt="Gmail">
-                        <h2>Gmail: arvidjjx@gmail.com</h2>
-                    </a>
-                </div>
-                <div class="contactItem">
-                    <a href="https://twitter.com/Triarii17">
-                        <img src="images/twitter.png" alt="Twitter">
-                        <h2>Twitter: Triarii17</h2>
-                    </a>
-                </div>
-                <div class="contactItem">
-                    <a href="https://www.instagram.com/arviddj/">
-                        <img src="images/instagram.png" alt="Instagram">
-                        <h2>Instagram: arvidjj</h2>
-                    </a>
+        <div id="contactSection">
+            <div class="contact center-flex">
+                <div class="contactContainer center-flex screen35 smallShadow">
+                    <h1><span class="material-symbols-outlined">
+                            account_circle
+                        </span> Contact</h1>
+                    <div class="contactItem">
+                        <a href="https://github.com/arvidjj" target="_blank">
+                            <img src="images/github.png" alt="Github">
+                            <h2 class="contactH">Github: arvidjj</h2>
+                        </a>
+                    </div>
+                    <div class="contactItem">
+                        <a href="mailto:arvidjjx@gmail.com">
+                            <img src="images/gmail.png" alt="Gmail">
+                            <h2 class="contactH">Gmail: arvidjjx@gmail.com</h2>
+                        </a>
+                    </div>
+                    <div class="contactItem">
+                        <a href="https://twitter.com/Triarii17" target="_blank">
+                            <img src="images/twitter.png" alt="Twitter">
+                            <h2 class="contactH">Twitter: Triarii17</h2>
+                        </a>
+                    </div>
+                    <div class="contactItem">
+                        <a href="https://www.instagram.com/arviddj/" target="_blank">
+                            <img src="images/instagram.png" alt="Instagram">
+                            <h2 class="contactH">Instagram: arvidjj</h2>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="signUp center-flex">
-            <div class="signUpBox screen60">
+            <div class="signUpBox screen60 smallShadow">
                 <div class="signUpText">
                     <h2>Sign up to keep updated!</h2>
                     <p>Sign up now for our product and receive information and updates about our news.</p>
                 </div>
-                <button class="button buttonSignUp">Sign up</button>
+                <button class="button buttonSignUp smallShadow">Sign up</button>
             </div>
         </div>
 
-        <div class="footer center-flex">
+        <div class="footer center-flex smallShadow">
             <p>Copyright &copy; Breakz Project 2022<br>The Odin Project</p>
         </div>
 

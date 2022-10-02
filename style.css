@@ -44,6 +44,14 @@ a {
     max-width: 50rem;
 }
 
+.screen35 {
+    max-width: 35rem;
+}
+
+.screen25 {
+    max-width: 25rem;
+}
+
 .center-flex {
     align-items: center;
     justify-content: center;
@@ -52,6 +60,10 @@ a {
 .mx-auto {
     margin-left: auto;
     margin-right: auto;
+}
+
+.smallShadow {
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
 }
 
 .header {   
@@ -92,6 +104,7 @@ a {
     justify-content: center;
     flex-wrap: wrap;
     background-color: #24252f;
+    border: 1px solid transparent;
 }
 
 .hItem {
@@ -126,7 +139,6 @@ button {
 
 .heroButton {
     background-color: #857dcc;
-    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
     transition-duration: 0.5s;
 }
 
@@ -196,7 +208,7 @@ button {
 
 .signUp {
     display:flex;
-    margin: 150px;
+    margin: 100px;
     min-width: 0;
 }
 
@@ -218,7 +230,6 @@ button {
     background-color: rgb(133, 125, 204);
     border: 3px solid white;
     border-radius: 12px;
-    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
     transition-duration: 0.5s;
 }
 
@@ -235,15 +246,35 @@ button {
     text-align: center;
 }
 
+.contact {
+    display:flex;
+    margin:50px;
+}
+
+.contactContainer {
+    padding: 50px;
+    background-color: #24252f;
+    border: 5px solid rgb(24, 25, 36);
+    width:100%
+}
+
 .contactItem {
     display:flex;
+}
+
+.contactItem a {
+    display:flex;
+    align-items: center;
+    padding:2px;
+    padding-right:30px;
+}
+
+.contactItem a:hover .contactH {
+    text-shadow: 0 0 5px rgb(133, 125, 204), 0 0 7px #ff0000;
 }
 
 .contactItem a img {
     width:auto;
     height:25px;
-}
-
-.contactContainer {
-    display:flex;
+    margin-right:16px;
 }
