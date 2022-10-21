@@ -1,15 +1,35 @@
+:root, :root.light {
+    --main-color: black;
+    --secondary-color: white;
+    --bg: white;
+    --main-bg: #e7e9eb;
+    --menu-bg: #00BF66;
+    --striking-color: #08BFE1;
+
+    --border-btn: 1px solid rgb(220, 220, 220);
+    background-color: var(--bg);
+  }
+
+:root.dark {
+    --main-color: white;
+    --secondary-color: black;
+    --main-bg: #24252f;
+    --menu-bg: rgb(24, 25, 36);
+    --striking-color: #857dcc;
+    
+    --border-btn: 1px solid rgb(220, 220, 220);
+    background-image:url(images/mainBackground.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 body {
     font-family: 'Roboto', arial;
     margin: 0; padding: 0;
     display: flex;
     flex-direction: column;
-    /*background-color: rgb(24, 25, 36);*/
-    color: white;
-
-    background-image:url(images/mainBackground.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    color: var(--main-color);
 }
 
 ul {
@@ -20,15 +40,24 @@ ul {
 }
 
 ul a {
+    font-size:1.5rem;
+    color:white;
     padding: 20px;
 }
 
+ul button {
+    font-size:1.5rem;
+    color: white;
+    background-color: var(--menu-bg);
+    padding: 5px;
+}
+
 ul a:hover {
-    border: 1px solid white;
+    border: var(--border-btn);
 }
 
 a {
-    color: white;
+    color: var(--main-color);
     text-decoration: none;
 }
 
@@ -70,9 +99,10 @@ a {
     display:flex;
     justify-content: center;
     position:fixed;
-    background-color: rgb(24, 25, 36);
-    border-bottom: 1px solid white; 
+    background-color: var(--menu-bg);
+    border-bottom: var(--border-btn); 
     width: 100%;
+    z-index: 1;
 }
 
 .navBar {
@@ -103,7 +133,7 @@ a {
     align-items: stretch;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #24252f;
+    background-color: var(--main-bg);
     border: 1px solid transparent;
 }
 
@@ -115,6 +145,7 @@ a {
     flex-shrink: 1;
     font-size: 18px;  
     padding: 50px;
+    padding-right:0;
     width: 100%;
 }
 
@@ -138,18 +169,20 @@ button {
 }
 
 .heroButton {
-    background-color: #857dcc;
+    color: var(--main-color);
+    background-color: var(--striking-color);
     transition-duration: 0.5s;
 }
 
 .heroButton:hover {
-    background-color: whitesmoke;
+    color: var(--secondary-color);
+    background-color: var(--main-color);
 }
 
 .info {
     padding: 30px;
     text-align: center;
-    background-color: rgb(133, 125, 204);
+    background-color: var(--striking-color);
     padding-bottom: 100px;
 }
 
@@ -171,8 +204,9 @@ button {
     width: auto;
     height: 200px;
     margin: 5px;
-    border: 5px solid rgb(24, 25, 36);
+    border: 5px solid var(--menu-bg);
     border-radius: 12px;
+    background-color: var(--main-bg);
     box-shadow: 0 3px 5px rgba(0, 0, 0, .125);
     transition: transform .5s;
 }
@@ -184,7 +218,7 @@ button {
 .quote {
     display: flex;
     flex-direction: column;
-    background-color: #24252f;
+    background-color: var(--main-bg);
     padding: 80px;
 }
 
@@ -216,7 +250,7 @@ button {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(133, 125, 204);
+    background-color: var(--striking-color);
     padding: 36px 100px;
     width: 100%;
 }
@@ -227,7 +261,7 @@ button {
 
 .buttonSignUp {
     color: white;
-    background-color: rgb(133, 125, 204);
+    background-color: var(--striking-color);
     border: 3px solid white;
     border-radius: 12px;
     transition-duration: 0.5s;
@@ -240,7 +274,7 @@ button {
 
 .footer {
     border-top: 1px solid white; 
-    background-color: #24252f;
+    background-color: var(--main-bg);
     display:flex;
     flex-direction: column;
     text-align: center;
@@ -253,8 +287,8 @@ button {
 
 .contactContainer {
     padding: 50px;
-    background-color: #24252f;
-    border: 5px solid rgb(24, 25, 36);
+    background-color: var(--main-bg);
+    border: 5px solid var(--menu-bg);
     width:100%
 }
 
@@ -270,11 +304,19 @@ button {
 }
 
 .contactItem a:hover .contactH {
-    text-shadow: 0 0 5px rgb(133, 125, 204), 0 0 7px #ff0000;
+    text-shadow: 0 0 5px var(--striking-color), 0 0 7px #ff0000;
 }
 
 .contactItem a img {
     width:auto;
     height:25px;
     margin-right:16px;
+}
+
+.unFilledIcon{
+    font-variation-settings: 'FILL' 0;
+}
+
+.filledIcon{
+    font-variation-settings: 'FILL' 1;
 }
